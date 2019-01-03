@@ -41,3 +41,8 @@ $('a.smooth-scroll')
     }
   }
 });
+
+$(document).ready(function()
+{
+  document.getElementById('hid').style.visibility='hidden';
+});
