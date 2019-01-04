@@ -7280,7 +7280,6 @@ a.fb-btn{
 }
 
 .fb-comments {
-  position: absolute;
-  left: 50%;
   display:inline-block;
+  margin-right: 42%;
 }
