@@ -1,0 +1,9 @@
+@page {
+	size: landscape;
+}
+
+@media print {
+	#navigation {
+		display: none;
+	}
+}
