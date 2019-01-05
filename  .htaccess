@@ -1,6 +1,8 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]	
-RewriteCond %{HTTP_HOST}  !^www\.faresbaatour\.me$ [NC]
-RewriteRule ^(.*) http://www.faresbaatour.me/$1 [L,R]
 ErrorDocument 404 /404.html
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^faresbaatour.me [NC]
+RewriteRule ^(.*)$ http://www.faresbaatour.me/$1 [R=301,L]
